@@ -107,7 +107,7 @@ figure {
     font-weight: 700;
     font-size: 22px;
     text-transform: uppercase;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     display: block;
     width: 100%; }
     @media screen and (max-width: 768px) {
@@ -183,7 +183,7 @@ figure {
           transform: scaleX(1); }
   #colorlib-aside .colorlib-footer {
     position: absolute;
-    bottom: 40px;
+    /*bottom: 40px;*/
     right: 0;
     left: 0;
     font-size: 13px;
