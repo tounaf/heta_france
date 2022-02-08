@@ -12,9 +12,9 @@
 *
 * ======================================================= */
 body {
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: Courier New;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.8;
   color: rgba(0, 0, 0, 0.7); }
   @media screen and (max-width: 992px) {
@@ -32,7 +32,9 @@ a {
     text-decoration: none !important; }
 
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em; 
+  /*text-align: justify;*/
+}
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
@@ -137,7 +139,7 @@ figure {
         text-decoration: none;
         position: relative;
         padding: 10px 0;
-        font-family: "Quicksand", Arial, sans-serif;
+        font-family: Courier New;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
@@ -308,7 +310,7 @@ figure {
           position: absolute;
           bottom: 0;
           right: -15px;
-          padding: 7px;
+          /*padding: 7px;*/
           background: #c34121; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .desc {
@@ -427,9 +429,9 @@ body.offcanvas {
 
 .colorlib-heading {
   font-size: 18px;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
   font-weight: 500;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 5px;
   line-height: 1.8;
   position: relative; }
@@ -451,7 +453,7 @@ body.offcanvas {
   margin-bottom: 15px;
   display: block;
   font-size: 10px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #999999;
   font-weight: 500;
   letter-spacing: 5px; }
