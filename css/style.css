@@ -12,9 +12,9 @@
 *
 * ======================================================= */
 body {
-  font-family: Courier New;
+  font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.8;
   color: rgba(0, 0, 0, 0.7); }
   @media screen and (max-width: 992px) {
@@ -32,9 +32,7 @@ a {
     text-decoration: none !important; }
 
 p {
-  margin-bottom: 1.5em; 
-  /*text-align: justify;*/
-}
+  margin-bottom: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
@@ -92,7 +90,7 @@ figure {
   transition: 0.5s; }
   @media screen and (max-width: 1200px) {
     #colorlib-aside {
-      width: 100%; } }
+      width: 30%; } }
   @media screen and (max-width: 768px) {
     #colorlib-aside {
       width: 270px;
@@ -107,7 +105,7 @@ figure {
     font-weight: 700;
     font-size: 22px;
     text-transform: uppercase;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     display: block;
     width: 100%; }
     @media screen and (max-width: 768px) {
@@ -131,7 +129,7 @@ figure {
       padding: 0;
       list-style: none;
       font-size: 12px;
-      font-weight: 700;
+      font-weight: 500;
       /*text-transform: uppercase;*/
       letter-spacing: 1px; }
       #colorlib-aside #colorlib-main-menu ul li a {
@@ -139,7 +137,7 @@ figure {
         text-decoration: none;
         position: relative;
         padding: 10px 0;
-        font-family: Courier New;
+        font-family: "Quicksand", Arial, sans-serif;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
@@ -164,7 +162,7 @@ figure {
           transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         #colorlib-aside #colorlib-main-menu ul li a:hover {
           text-decoration: none;
-          color: black; }
+          color: white; }
           #colorlib-aside #colorlib-main-menu ul li a:hover:after {
             visibility: visible;
             -webkit-transform: scaleX(1);
@@ -192,6 +190,13 @@ figure {
     color: #545454;
     padding: 0 20px;
     width: 100%; }
+    .devinbox_footer {
+      font-size: 13px;
+      margin-top: -65px;
+    }
+    .footer_padding {
+      padding-top: 20px; padding-bottom: 20px;
+    }
     @media screen and (max-width: 768px) {
       #colorlib-aside .colorlib-footer {
         position: relative;
@@ -207,34 +212,12 @@ figure {
         display: inline;
         list-style: none; }
         #colorlib-aside .colorlib-footer ul li a {
-          color: rgba(255, 255, 255, 0.3);
+          color: #c34121;
           padding: 4px; }
           #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
             text-decoration: none;
             outline: none;
-            color: #c34121; }
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 12px;
-  border: none;
-  outline: none;
-  background-color: #dd6142;
-  color: white;
-  cursor: pointer;
-  padding: 9px;
-  width: 39px;
-  border-radius: 50%;
-}
-
-#myBtn:hover {
-  background-color: #842a14;
-}
-
+            color: rgba(255, 255, 255, 0.3); }
 
 #colorlib-main {
   width: 80%;
@@ -310,8 +293,12 @@ figure {
           position: absolute;
           bottom: 0;
           right: -15px;
-          /*padding: 7px;*/
+          /*padding: 30px;*/
           background: #c34121; }
+          #colorlib-hero .flexslider .slider-text > .slider-text-inner .desc .desc_image {
+            font-size: 11px;
+            margin: 0px 15px 0 15px;
+          }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .desc {
               right: 0;
@@ -405,8 +392,8 @@ body.offcanvas {
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact {
-  padding-top: 0em;
-  padding-bottom: 5em;
+  padding-top: 4em;
+  padding-bottom: 9em;
   clear: both;
   width: 100%;
   display: block; }
@@ -429,7 +416,7 @@ body.offcanvas {
 
 .colorlib-heading {
   font-size: 18px;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   font-weight: 500;
   /*text-transform: uppercase;*/
   letter-spacing: 5px;
@@ -908,7 +895,7 @@ body.offcanvas {
   line-height: 1.5; }
 
 #get-in-touch {
-  padding: 2em 0; }
+  padding: 3em 0; }
   #get-in-touch .btn-learn {
     padding: 15px 30px !important;
     font-size: 13px;
@@ -950,13 +937,6 @@ body.offcanvas {
         outline: none;
         text-decoration: none;
         color: #c34121; }
-
-#map {
-  width: 100%;
-  height: 700px; }
-  @media screen and (max-width: 768px) {
-    #map {
-      height: 200px; } }
 
 .colorlib-bg-color {
   background: #fafafa;

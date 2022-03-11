@@ -40,9 +40,6 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-		<!-- Font-icons -->
-	<link rel="stylesheet" type="text/css" href="fonticons/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="fonticons/css/font-awesome.min.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -67,28 +64,23 @@
 				</ul>
 			</nav>
 
-			<span style="">
-				<p style="text-align: center; font-size: 12px;padding-top: 20px; padding-bottom: 20px;"><i>"Votre projet, <br> votre signature"</i><p>
-			</span>
-
-
 			<div class="colorlib-footer">
-				<p style="font-size: 11px;">
+				<p class="footer_padding">
 					<small>
-						Bureau d'études assuré dans le cadre de son activité <br>
-					</small>	
-				</p>
-				<p style="font-size: 11px;">
-					<small>
-						&copy;Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <br> | Made with passion by <a href="https://www.pricing.dev-inbox.com" target="_blank">Devinbox</a>
+						<i>"Votre projet, <br> votre signature"</i>
 					</small>
 				</p>
-				<ul>
-					<li><a href="#" style="color: #c34121;"><i class="icon-facebook2"></i></a></li>
-					<li><a href="#" style="color: #c34121;"><i class="icon-twitter2"></i></a></li>
-					<li><a href="#" style="color: #c34121;"><i class="icon-instagram"></i></a></li>
-					<li><a href="#" style="color: #c34121;"><i class="icon-linkedin2"></i></a></li>
+				<ul class="footer_padding">
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
 				</ul>
+				<p class="footer_padding">
+					<small>
+						Bureau d'études assuré dans le cadre de son activité
+					</small>
+				</p>
 			</div>
 
 		</aside>
@@ -200,6 +192,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div id="get-in-touch" class="colorlib-bg-color">
 				<div class="colorlib-narrow-content">
 					<div class="row">
@@ -215,11 +208,21 @@
 								92120 - Montrouge <br>
 								contact@heta-france.fr
 							</p>
-							<p><a href="contact.html" class="btn btn-primary btn-learn">Nous contacter</a></p>
+							<p>
+								<a href="contact.html" class="btn btn-primary btn-learn">Nous contacter</a>
+							</p>
 						</div>
-						<span style="text-align: right;">
-							<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-						</span>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<center>
+								<p class="devinbox_footer">
+									<small>
+										&copy;Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <br> | Made with passion by <a href="https://www.pricing.dev-inbox.com" target="_blank">Devinbox</a>
+									</small>
+								</p>
+							</center>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -246,32 +249,6 @@
 	
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
-
-<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-  document.documentElement.scrollTo({
-	    top: 0,
-	    behavior: "smooth"
-	  });
-}
-</script>
 
 	</body>
 </html>
