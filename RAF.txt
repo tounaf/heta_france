@@ -3,11 +3,13 @@ Gris noir : #545454;
 Gris clair : #F0F0F0; (ancien sidebar)
 Gris footer : #fafafa
 
-
-Police
-Boutton : monter vers le haut
-Ovaina le seconde am session
-
 Authentification : 
 HETA_admin
 HETA_admin_mdp
+
+
+RESTES A FAIRE :
+- Police
+- Boutton : monter vers le haut
+- Ovaina le seconde am session
+- Mail mandefa any am HETA
