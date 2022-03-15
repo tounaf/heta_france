@@ -60,7 +60,8 @@
 					<li><a href="domaines.html">Expertise en projets immobiliers</a></li>
 					<li><a href="projets.html">Nos projets</a></li>
 					<li><a href="blog.php">Docteur maisons et actu</a></li>
-					<li class="colorlib-active"><a href="contact.html">Contact</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li class="colorlib-active"><a href="login.php">Authentification</a></li>
 				</ul>
 			</nav>
 
@@ -87,69 +88,69 @@
 
 		<div id="colorlib-main">
 
-			<div class="colorlib-contact">
+			<div class="colorlib-about">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Contact</span>
-							<h2 class="colorlib-heading">Formulaire de contact</h2>
+							<div class="about-desc">
+								<span class="heading-meta">Accéder à votre tableau de bord</span>
+								<h2 class="colorlib-heading">Authentification</h2>
+								
+								   <div class="login_box">
+							        <center>
+							          <form method="post" action="traitement/login_process.php">
+							            <div class="row">
+							              <div class="form-group">
+							                <label class="label_login">Identifiant</label>
+							                <input type="text" class="form-control" name="identifiant" required>
+							              </div>
+							              <div class="form-group">
+							                <label class="label_login">Mot de passe</label>
+							                <input type="password" class="form-control" name="motdepasse" required id="showPassword">
+							                <span style="font-size: 15px;">
+							                  <input type="checkbox" onclick="myFunction()"> Afficher
+							                </span>
+							              </div>
+							            <div class="text-center"><input type="submit" class="btn btn-primary btn-learn" value="Se connecter"></div>
+							            </div>
+							          </form>
+							        </center>
+							      </div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="get-in-touch" class="colorlib-bg-color">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<h3>Contact</h3>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-5">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-globe-outline"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="#">contact@heta-france.fr</a></p>
-								</div>
-							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-map"></i>
-								</div>
-								<div class="colorlib-text">
-									<p>
-										32, rue Barbès <br>
-										92120 - Montrouge
-									</p>
-								</div>
-							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-phone"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="tel://">+33 6 64 49 11 18</a></p>
-								</div>
-							</div>
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<p class="colorlib-lead" style="font-size: 13px;">
+								<b>Hêta</b> <br>
+								32, rue Barbès <br>
+								92120 - Montrouge <br>
+								contact@heta-france.fr
+							</p>
+							<p>
+								<a href="contact.html" class="btn btn-primary btn-learn">Nous contacter</a>
+							</p>
 						</div>
-						<div class="col-md-7 col-md-push-1">
-							<div class="row">
-								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">
-									<form action="">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Nom">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Objet">
-										</div>
-										<div class="form-group">
-											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Votre message"></textarea>
-										</div>
-										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message" value="Envoyer message">
-										</div>
-									</form>
-								</div>
-								
-							</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<center>
+								<p class="devinbox_footer">
+									<small>
+										&copy;Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <br> | Made with passion by <a href="https://www.pricing.dev-inbox.com" target="_blank">Devinbox</a>
+									</small>
+								</p>
+							</center>
 						</div>
 					</div>
 				</div>
@@ -173,13 +174,25 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
 	
 	
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+
+	<!-- Fonction Hide/show -->
+	<script type="text/javascript">
+
+    function myFunction() {
+      var x = document.getElementById("showPassword");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+
+
+  	</script>
 
 	</body>
 </html>

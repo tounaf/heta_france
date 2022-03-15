@@ -1,3 +1,8 @@
+<?php
+  require_once 'parameters.php';
+  include('connexion/connexion.php');
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -59,7 +64,7 @@
 					<li><a href="index.html">Qui sommes nous ?</a></li>
 					<li><a href="domaines.html">Expertise en projets immobiliers</a></li>
 					<li><a href="projets.html">Nos projets</a></li>
-					<li class="colorlib-active"><a href="blog.html">Actualités</a></li>
+					<li class="colorlib-active"><a href="blog.php">Docteur maisons et actu</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
@@ -92,7 +97,7 @@
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">Blog</span>
-							<h2 class="colorlib-heading">Read Blog</h2>
+							<h2 class="colorlib-heading">Docteur maisons et actu</h2>
 						</div>
 					</div>
 					<div class="row">
