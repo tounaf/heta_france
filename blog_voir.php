@@ -1,4 +1,5 @@
 <?php
+  $id = $_GET['id'];
   require_once 'parameters.php';
   include('connexion/connexion.php');
 ?>
@@ -101,67 +102,34 @@
 						</div>
 					</div>
 
-				<?php
-                    $sql = "SELECT * FROM article";
-                    $resultat = mysqli_query($conn, $sql);
-                    $total_ligne = mysqli_num_rows($resultat);
-                    if(isset($_GET["debut"]))
-                    {
-                      $commencement = $_GET["debut"];
-                      $nbliste = 3;
-                    }
-                    else
-                    {
-                      $commencement = 0;
-                      $nbliste = 3;
-                    }
-
-                    $nb_page = ceil($total_ligne/$nbliste);
-                    $sql = "SELECT * FROM article ORDER BY id DESC LIMIT  $commencement, $nbliste";
-                    $result = mysqli_query($conn, $sql);
-                    if ($result->num_rows > 0) {
-                    while($row = $result->fetch_assoc()) {
-                 ?>
+					<?php
+	                  $sql = "SELECT * FROM article WHERE id = $id";
+	                  $result = $conn->query($sql);
+	                  $row = $result->fetch_assoc();
+	                ?>
 
 					<div class="row">
-						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="blog-entry">
-								<a href="blog_voir.php?id=<?php echo $row['id']; ?>" class="blog-img"><img src="<?php echo 'upload/'.$row['image_art'] ?>" class="img-responsive"></a>
+								<a class="blog-img"><img src="<?php echo 'upload/'.$row['image_art'] ?>" class="img-responsive"></a>
 							</div>
 						</div>
-						<div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="desc">
-								<h3 style="margin: 0 0 15px 0;"><a href="blog_voir.php?id=<?php echo $row['id']; ?>"><?php echo $row['titre_art']; ?></a></h3>
+								<h3 style="margin: 0 0 15px 0;"><a href="blog.html"><?php echo $row['titre_art']; ?></a></h3>
 								<span style="font-weight: bold;"><small><?php echo $row['date_pub_art']; ?></small></span>
-								<p style="text-align: justify;"><?php echo(substr($row['contenu_art'],0,210).'...'); ?></p>
-								<a href="blog_voir.php?id=<?php echo $row['id']; ?>">
-		                          <div class="post-btn">
-		                             <button class="btn btn-post float-right">En savoir plus</button>
-		                           </div>
-		                        </a>
+								<p style="text-align: justify;"><?php echo $row['contenu_art']; ?></p>
 							</div>
-							<!-- <hr> -->
 						</div>
 					</div>
-
-					<?php
-                        }
-                      }
-                      ?>
-
 					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<ul class="pagination">
-								<?php
-			                    for($i = 0; $i<$nb_page; $i++){
-			                      $k = $i * $nbliste;
-			                      $p = $i+1;
-
-			                      ?>
-			                      <li class="page-item"><a class="page-link"  href="blog.php?debut=<?php echo $k  ?>"><?php echo $p; ?></a></li>
-			                  	<?php } ?>
-							</ul>
-						</div>
+						<center>
+							<a href="blog.php">
+			                  <div class="post-btn">
+			                     <button class="btn btn-post float-right">Tous les articles</button>
+			                   </div>
+			                </a>
+		                </center>
 					</div>
 				</div>
 			</div>
