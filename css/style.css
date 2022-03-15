@@ -84,7 +84,7 @@ figure {
   left: 0;
   overflow-y: scroll;
   z-index: 1001;
-  background: #F0F0F0;
+  background: #fafafa;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
@@ -162,7 +162,7 @@ figure {
           transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         #colorlib-aside #colorlib-main-menu ul li a:hover {
           text-decoration: none;
-          color: white; }
+          color: black; }
           #colorlib-aside #colorlib-main-menu ul li a:hover:after {
             visibility: visible;
             -webkit-transform: scaleX(1);
@@ -939,7 +939,7 @@ body.offcanvas {
         color: #c34121; }
 
 .colorlib-bg-color {
-  background: #fafafa;
+  background: black;
   position: relative; }
 
 .pagination {
@@ -1112,7 +1112,7 @@ body.offcanvas {
     -webkit-box-shadow: none;
     box-shadow: none;
     border-color: transparent;
-    background: #f0f0f0; }
+    background: #fafafa; }
 
 #message {
   height: 130px; }
