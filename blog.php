@@ -97,7 +97,44 @@
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">Blog</span>
-							<h2 class="colorlib-heading">Docteur maisons et actu</h2>
+							<h2 class="colorlib-heading">
+								Docteur maisons « Allô ! »
+							</h2>
+							<p>
+								<a href=""><b><i >*service uniquement pour les projets en Ile de France</i></b></a>
+							</p>
+						</div>
+
+						<div class="row row-bottom-padded-md">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">	
+											<p style="text-align: justify;">
+												Vous avez un projet d’achat, des questions sur des démarches administratives, sur la méthodologie pour appréhender cet univers complexe qu’est le marché immobilier, et pourtant vous devez prendre des décisions qui peuvent impliquer des économie de toute une vie . 
+												<br>
+												Depuis plus de 15 ans,  notre expérience nous mène à côtoyer quotidiennement  tous les acteurs de la construction,   toujours l’échelle du particulier, de la maison individuelle,  de l’appartement, tels :  Les services urbanisme des mairies avec la plupart desquelles nous avons noué d’étroites relations (surtout en Île-de-France) , les bureaux d’études ingénieurs, les géotechniciens, l’Inspection générale des Carrières (une grande partie du foncier en île de France se trouve en zone de carrières ),les architectes DPLG ( obligatoire pour tous projet supérieurs 150 m2 de surface de plancher),  les thermiciens , les géomètres, les entreprises et artisans  de la construction, les fournisseurs etc. 
+											</p>
+											<p style="text-align: justify;">
+												Nous partageons volontiers tous nos acquis et pouvons <b><u>vous conseiller et vous accompagner dans votre projet </u></b>
+											</p>
+											<p style="text-align: justify;">
+												<a href="contact.html"><b>Envoyez nous un mail nous vous répondons gratuitement, ou prenez un RDV  à nos locaux pour nous présenter votre projet ou vos questions ( honoraires forfaitaires quelque soit votre projet : 50€ H.T. ou 60€ TTC la séance )</b></a>
+											</p>
+											<p>
+												<a href="contact.html" class="btn btn-primary btn-learn">Nous contacter</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading">Actus et projets en cours</h2>
 						</div>
 					</div>
 
