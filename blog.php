@@ -111,9 +111,12 @@
 									<div class="col-md-12">
 										<div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">	
 											<p style="text-align: justify;">
-												Vous avez un projet d’achat, des questions sur des démarches administratives, sur la méthodologie pour appréhender cet univers complexe qu’est le marché immobilier, et pourtant vous devez prendre des décisions qui peuvent impliquer des économie de toute une vie . 
+												Vous avez un projet d’achat, <button class="btn" id="boutton_voir" onclick="voirPlus()">Lire ...</button><span id="voir_texte">
+												des questions sur des démarches administratives, sur la méthodologie pour appréhender cet univers complexe qu’est le marché immobilier, et pourtant vous devez prendre des décisions qui peuvent impliquer des économie de toute une vie . 
 												<br>
 												Depuis plus de 15 ans,  notre expérience nous mène à côtoyer quotidiennement  tous les acteurs de la construction,   toujours l’échelle du particulier, de la maison individuelle,  de l’appartement, tels :  Les services urbanisme des mairies avec la plupart desquelles nous avons noué d’étroites relations (surtout en Île-de-France) , les bureaux d’études ingénieurs, les géotechniciens, l’Inspection générale des Carrières (une grande partie du foncier en île de France se trouve en zone de carrières ),les architectes DPLG ( obligatoire pour tous projet supérieurs 150 m2 de surface de plancher),  les thermiciens , les géomètres, les entreprises et artisans  de la construction, les fournisseurs etc. 
+												</span>
+												<button class="btn" id="boutton_cacher" onclick="voirMoins()"><i class="icon-arrow-up"></i> Voir moins</button>
 											</p>
 											<p style="text-align: justify;">
 												Nous partageons volontiers tous nos acquis et pouvons <b><u>vous conseiller et vous accompagner dans votre projet </u></b>
@@ -259,6 +262,25 @@
 	
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<script>
+		var voir_texte = document.getElementById("voir_texte");
+		var boutton_voir = document.getElementById("boutton_voir");
+		var boutton_cacher = document.getElementById("boutton_cacher");
+		voir_texte.style.display = "none";
+		boutton_cacher.style.display = "none";
+		
+		function voirPlus() {
+		voir_texte.style.display = "inline";
+		boutton_voir.style.display = "none";
+		boutton_cacher.style.display = "inline";
+		}
+		function voirMoins() {
+		voir_texte.style.display = "none";
+		boutton_voir.style.display = "inline";
+		boutton_cacher.style.display = "none";
+		}
+
+	</script>
 
 	</body>
 </html>
