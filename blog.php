@@ -111,8 +111,7 @@
 									<div class="col-md-12">
 										<div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">	
 											<p style="text-align: justify;">
-												Vous avez un projet d’achat, <button class="btn" id="boutton_voir" onclick="voirPlus()">Lire ...</button><span id="voir_texte">
-												des questions sur des démarches administratives, sur la méthodologie pour appréhender cet univers complexe qu’est le marché immobilier, et pourtant vous devez prendre des décisions qui peuvent impliquer des économie de toute une vie . 
+												Vous avez un projet d’achat, des questions <button class="btn" id="boutton_voir" onclick="voirPlus()">Lire ...</button><span id="voir_texte">sur des démarches administratives, sur la méthodologie pour appréhender cet univers complexe qu’est le marché immobilier, et pourtant vous devez prendre des décisions qui peuvent impliquer des économie de toute une vie . 
 												<br>
 												Depuis plus de 15 ans,  notre expérience nous mène à côtoyer quotidiennement  tous les acteurs de la construction,   toujours l’échelle du particulier, de la maison individuelle,  de l’appartement, tels :  Les services urbanisme des mairies avec la plupart desquelles nous avons noué d’étroites relations (surtout en Île-de-France) , les bureaux d’études ingénieurs, les géotechniciens, l’Inspection générale des Carrières (une grande partie du foncier en île de France se trouve en zone de carrières ),les architectes DPLG ( obligatoire pour tous projet supérieurs 150 m2 de surface de plancher),  les thermiciens , les géomètres, les entreprises et artisans  de la construction, les fournisseurs etc. 
 												</span>
